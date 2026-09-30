@@ -6,22 +6,25 @@
   <meta name="keywords" content="PHP, HTML Login page" >
   <meta name="author" content="Ryan Fu"  >
   <title>Login Page</title>
-  <?php include 'header.inc'; ?>
 </head>
 <body>
-    
+    <header>
+    <h1>Lab8 login page</h1>
+    </header>
     <form method="post" action="process.php">
         <fieldset>
             <legend> Sign in </legend>
-            <label for="username">Username:</label>
+            <label id="username">Username:</label>
             <input type="text" name="username" required> <br>
 
-            <label for="password">Password:</label>
+            <label id="password">Password:</label>
             <input type="password" name="password" required> <br>
 
             <input type="hidden" name="token" value="abc123">
             <input type="submit" value="Login">
         </fieldset>
     </form>
-    <?php include 'footer.inc'; ?>
+    <footer>
+    <p>&copy; 2026 My Website</p>
+    </footer>
 </body>
